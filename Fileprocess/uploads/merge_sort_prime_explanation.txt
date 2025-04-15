@@ -1,0 +1,44 @@
+
+Explanation of the Haskell Code
+
+**Problem Statement**:
+Given an odd-length list of positive numbers, perform a user-defined 2-way merge sort algorithm to sort the list.
+Then, determine if the middle element of the sorted list is a prime number using a higher-order function.
+
+---
+
+**Solution Steps**:
+1. **Merge Function**:
+   - A recursive function `merge` is defined to merge two sorted lists into one sorted list.
+   - It compares the heads of both lists and appends the smaller element to the result.
+
+2. **Merge Sort Function**:
+   - The `mergeSort` function recursively divides the list into two halves, sorts each half, and merges them back.
+   - This ensures the list is sorted in ascending order.
+
+3. **Prime Check Function**:
+   - The `isPrime` function checks whether a number is prime.
+   - It uses a list comprehension to find all divisors of the number from 2 to `n-1`.
+   - If there are no divisors, the number is prime.
+
+4. **Main Function**:
+   - The input list is `[11, 8, 7, 9, 12]`.
+   - The list is sorted using `mergeSort`, and the middle element is found using indexing.
+   - A higher-order function (`null`) is used in the `isPrime` function to determine primality.
+   - The program outputs whether the middle element is a prime number.
+
+---
+
+**Example Execution**:
+- Input: `[11, 8, 7, 9, 12]`
+- Sorted List: `[7, 8, 9, 11, 12]`
+- Middle Element: `9`
+- Prime Check: `9` is not a prime number (divisible by 3).
+- Output: "The middle element of the sorted list is 9 and it is not a prime number."
+
+---
+
+**Key Points**:
+- Custom implementation of 2-way merge sort ensures the sorting is done manually.
+- Higher-order functions are used to determine the primality of the middle element.
+- The program handles only odd-length lists as per the problem statement.
