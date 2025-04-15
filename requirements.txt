@@ -5,5 +5,4 @@ pyaudio==0.2.14
 google-generativeai==0.4.1
 requests==2.32.3
 gunicorn==20.1.0
-azure-cognitiveservices-translation==1.0.0  # For Azure Translator API
 langchain==0.0.208  # For LangChain prompt templates
